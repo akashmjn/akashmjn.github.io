@@ -12,4 +12,4 @@ header:
   thumb:
 ---
 
-Analyzed the forces shaping the changing and competitive music streaming industry, from the perspective of Spotify. 
+Strategy course paper: Analyzed strategies in music streaming, from the perspective of Spotify 
