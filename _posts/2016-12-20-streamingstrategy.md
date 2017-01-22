@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Strategic analysis of the music streaming industry
+title: Strategy course paper - music streaming
 redirect_to: /spotify/Spotify-Presentation.pdf
 modified:
 categories: academicprojects
@@ -12,4 +12,4 @@ header:
   thumb:
 ---
 
-Strategy course paper: Analyzed strategies in music streaming, from the perspective of Spotify 
+Analyzed forces shaping the changing music industry, from the perspective of Spotify 
