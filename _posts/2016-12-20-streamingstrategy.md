@@ -31,4 +31,4 @@ For the class MS&E 270 - Strategy in Technology Based Companies, our team studie
 
 ### Independent Research
 
-I'm currently working with [Prof. Kathleen Eisenhardt](https://profiles.stanford.edu/kathleen-eisenhardt), taking forward some of this work for a more in-depth study of the music streaming industry involving other companies in this very competitive space. 
+I'm currently working with [Prof. Kathleen Eisenhardt](https://profiles.stanford.edu/kathleen-eisenhardt), taking forward some of this work for a more in-depth study of the music streaming industry involving Pandora, Rhapsody etc. looking at the evolution of this complex competitive space. 
