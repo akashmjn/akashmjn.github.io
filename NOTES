@@ -1,0 +1,24 @@
+SETUP:
+* install & setup stuff locally 
+    Github official dependency list: https://pages.github.com/versions/
+    * install ruby 
+        (install with rvm: https://github.com/rvm/ubuntu_rvm)
+        `rvm install 2.7`
+    * setup dependencies (jeykll, github-pages)
+        `gem install bundler`
+* run a local testing server with the same website 
+    (Github docs: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
+    (Jekyll docs walkthrough: https://jekyllrb.com/docs/step-by-step/01-setup/)
+        `bundle exec jekyll serve`
+
+TODOs:
+* try updating the version & theme 
+* do some cleanup (don't sweat it more than 30min)
+    * update font-family 
+    * fix font sizing
+    * change DP, follow links and skin in _config.yaml
+    * update the layout for bio page 
+* update my bio writeup
+* add link relevant links for work to the bio
+* add a last updated 
+    (Bug in MMistakes _includes template: https://blog.sverrirs.com/2016/10/jekyll-passing-post-variables-to-includes.html)
