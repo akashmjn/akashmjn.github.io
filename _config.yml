@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -92,11 +92,11 @@ analytics:
       
 # Site Author
 author:
-  name             : "Akash Mahajan"
-  avatar           : /assets/images/IDPhoto.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I think I overthink."
-  location         : "Stanford, CA"
-  email            : "[DOMAIN_NAME] @ [STANFORD] dot [EDU]"
+  # name             : "Akash Mahajan"
+  avatar           : /assets/images/me-2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  # bio              : "[DOMAIN_NAME] @ [STANFORD] dot [EDU]"
+  location         : "Bellevue, WA, USA"
+  # email            : 
   links:
     # - label: "Email"
       # icon: "fas fa-fw fa-envelope-square"
@@ -107,9 +107,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/akashmjn"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/akashmjn"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/akashmjn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/akashmjn"
@@ -129,9 +129,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/akashmjn"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/akashmjn"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/akashmjn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/akashmjn"
