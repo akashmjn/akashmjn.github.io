@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -21,8 +21,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Akash Mahajan"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://akashmjn.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -51,7 +51,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -92,11 +92,11 @@ analytics:
       
 # Site Author
 author:
-  name             : "Akash Mahajan"
-  avatar           : /assets/images/IDPhoto.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I think I overthink."
-  location         : "Stanford, CA"
-  email            : "[DOMAIN_NAME] @ [STANFORD] dot [EDU]"
+  # name             : "Akash Mahajan"
+  avatar           : /assets/images/me-2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  # bio              : "[DOMAIN_NAME] @ [STANFORD] dot [EDU]"
+  location         : "Bellevue, WA, USA"
+  # email            : 
   links:
     # - label: "Email"
       # icon: "fas fa-fw fa-envelope-square"
@@ -107,9 +107,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/akashmjn"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/akashmjn"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/akashmjn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/akashmjn"
@@ -129,9 +129,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/akashmjn"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/akashmjn"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/akashmjn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/akashmjn"
@@ -220,6 +220,7 @@ plugins:
   - jemoji
   - jekyll-redirect-from
   - jekyll-include-cache
+  - jekyll-target-blank
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -228,6 +229,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-target-blank
 
 
 # Archives
