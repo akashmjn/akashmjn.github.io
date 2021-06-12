@@ -2,6 +2,7 @@
 layout: archive
 author_profile: true
 title: 
+redirect_from: /about/
 last_modified_at: "2021-06-12"
 date: "2021-06-12"
 ---
