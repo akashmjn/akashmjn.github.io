@@ -9,28 +9,39 @@ header:
   feature:
   teaser: /assets/images/spotify-teaser.png
   thumb:
+redirect_from: /spotify/Spotify-Presentation.pdf/
+last_modified_at: "2021-06-13"
 ---
 
-### Independent Research
+### Spotify Strategy Analysis (MS&E270) 
+*Playing a new tune in a disrupted market*
 
-I'm currently working with [Prof. Kathleen Eisenhardt](https://profiles.stanford.edu/kathleen-eisenhardt), taking forward some of this work for a more in-depth study of the music streaming industry involving Pandora, Rhapsody etc. looking at the evolution of this complex competitive space, different factors that come into play when dealing with the monopoly of music labels. A quick overview of 3 more detailed 5000 word case studies I had written on the same is below. Feel free to contact me if you'd like to learn more :)
+This work was done as a class project at Stanford for [MS&E 270: Strategy in Technology Based Companies](https://edusalsa.com/course?c=MS%26E%20270). Our team analyzed the competitive environment of the music industry,  studied the strategy of Spotify through a few different strategic frameworks (for e.g. VRIN), and then took a shot at future recommendations. This culminated in a 30-page report, collecting information from various press releases, interviews we conducted, and industry reports on the evolution of the music & streaming industry. You can skim through the summary presentation below. 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSi3IWhG5E1-QgWMdEJlFzFqiT1P8xV2fRDp-knOFK2i2iw6PJjdJSnPF5r5xksOsyeU1dSH-HJpOL1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+Or use this link to browse in a new tab as a PDF <a href="/pdf/Spotify-MS&E270-Presentation.pdf" target="_blank">[Presentation]</a>
 
-### Strategy Course
+<div>
+<!-- Reference: https://pdfjs.express/blog/how-embed-pdf-in-html-website -->
+  <object
+    data='/pdf/Spotify-MS&E270-Presentation.pdf'
+    type="application/pdf"
+    width="100%"
+    height="80%"
+  >
+  <iframe
+    src='/pdf/Spotify-MS&E270-Presentation.pdf'
+    width="100%"
+    height="80%"
+  >
+  <p>This browser does not support PDF!</p>
+  </iframe>
 
-The above work was a follow up on my project for the class MS&E 270 - Strategy in Technology Based Companies. Our team studied the strategy of Spotify and looked at future recommendations. We wrote a 30-page report, collecting information from interviews we conducted, and sourced from various press releases and industry reports on the evolution of the music streaming industry - with a focus on Spotify. A quick reference of our presentation below. 
-
-<div class="grid__wrapper" style="margin-bottom:150px">
-<div class="grid__wrapper" style="margin-bottom:10px">
-  <div class="grid__item" style="margin-bottom:10px">
-        <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">   
-        <div class="archive__item-teaser" style="margin-bottom:10px">
-        <a href="https://akashmjn.github.io/spotify/Spotify-Presentation.pdf" rel="permalink">
-        <img src="/assets/images/spotify-teaser.png" alt="Spotify-Presentation">
-        </a>
-        </div>  
-        </article>
-  </div>
+  </object>
 </div>
-</div>
+
+
+### Independent Study & Case Writing 
+
+I had followed up on this work as an independent study for credit under [Prof. Kathleen Eisenhardt](https://profiles.stanford.edu/kathleen-eisenhardt). The analysis was taken forward with a more in-depth breakdown of the fiendishly complex music industry, as well as a detailed look at Pandora's history as an older player in the same space. This concluded with a contrast between these two companies, in the form of 5000 word attempted-HBR-style 😉 case studies. 
+
+Needless to say, I learnt a lot during this! Fun fact: early on in it's roughest times, Pandora's founder was rejected [350 times in pitches to venture capitalists](https://www.inc.com/magazine/20071001/pandoras-long-strange-trip.html). Feel free to contact me via email/twitter if you found this of interest, or would like to learn more! I can look into sharing/publishing those reports if needed.
