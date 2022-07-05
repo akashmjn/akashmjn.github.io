@@ -4,5 +4,6 @@ main:
     url: /projects
   - title: "Other fun stuff"
     url: /otherfunstuff
-  - title: Resume
-    url: /resume/AkashMahajan_resume.pdf
+#     This resume is pretty old (2018)
+#   - title: Resume
+#     url: /resume/AkashMahajan_resume.pdf
