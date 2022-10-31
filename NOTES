@@ -1,11 +1,16 @@
 SETUP:
 * install & setup stuff locally 
     Github official dependency list: https://pages.github.com/versions/
+
     * install ruby 
-        (install with rvm: https://github.com/rvm/ubuntu_rvm)
-        `rvm install 2.7`
+        * Mac (install with chruby: https://jekyllrb.com/docs/installation/macos/)
+        * Linux (install with rvm: https://github.com/rvm/ubuntu_rvm)
+            `rvm install 2.7`
     * setup dependencies (jeykll, github-pages)
-        `gem install bundler`
+        `gem install jekyll bundler`
+        `bundle install`
+    (if running into errors with webrick/ruby-3.1.2, solved here https://talk.jekyllrb.com/t/load-error-cannot-load-such-file-webrick/5417 )
+        `bundle add webrick`
 * run a local testing server with the same website 
     (Github docs: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
     (Jekyll docs walkthrough: https://jekyllrb.com/docs/step-by-step/01-setup/)
