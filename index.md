@@ -3,18 +3,22 @@ layout: archive
 author_profile: true
 title: 
 redirect_from: /about/
-last_modified_at: "2021-06-12"
-date: "2021-06-12"
+last_modified_at: "2022-10-30"
+date: "2022-10-30"
 ---
 
-Hi! I currently wear a few hats as an Applied Scientist at Microsoft:
+<!-- neural network whisperer / product minded AI / pulse on AI zeitgeist / love for X -->
 
-As an ML engineer, I've shipped world-class hybrid speech recognition models to 2 Azure APIs: [CTS](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/conversation-transcription) & [Speech-to-text](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/), that have powered products such as [Word Transcribe](https://twitter.com/Gizmodo/status/1298865348733808641?s=20), [Twitter Spaces](https://twitter.com/jakhorner/status/1353878279841861635?s=20) & [PowerPoint Coach](https://news.microsoft.com/europe/2019/06/18/say-hello-to-presenter-coach-powerpoints-new-ai-powered-tool-which-will-help-you-nail-your-next-presentation/). Naturally this also meant fun times wrangling with our big-data & MLOps pipelines; a migration out of CNTK (legacy) involving lots of gnarly [ML debugging](http://josh-tobin.com/troubleshooting-deep-neural-networks.html); and contributing to a shiny new Pytorch hybrid ASR toolkit.
+👋. I'm currently working on meeting transcription as a Sr. Applied Scientist at Microsoft. I'm part of an R&D team responsible for shipping state-of-art speech recognition models for the Azure Cognitive Service (used by [Twitter](https://customers.microsoft.com/en-us/story/1533249396837116946-twitter-media-entertainment-azure)) or to power new MSFT products such as [AI-assisted recap of meetings in Teams](https://www.theverge.com/2022/10/12/23400332/microsoft-teams-premium-intelligent-recap-live-translations). In this role I need to deeply understand product needs & system limitations, keep a pulse on fast-evolving AI research while making prudent technology choices, implement these ideas and keep experimenting using data & distributed training infrastructure until we can ship better models.
 
-As a scientist, I closely track relevant research, adapting it as necessary (on occasion, trying to improve on it). After an initial investigation into accent robustness in &apos;19, i'm currently diving deep into self-supervised representation learning, which I expect will soon transform all speech & audio-related tasks.
+🐋 In my first year at the [MSFT hackathon](https://news.microsoft.com/life/hackathon/) as an ode to the stunning beauty of the PNW region, I co-founded OrcaHello. OrcaHello is an [open-source](https://github.com/orcasound/aifororcas-livesystem) AI-assisted Southern Resident Killer Whale (SRKW) acoustic monitoring & alert system. Since it went live in September 2020, it's been "listening" 24x7 to [3 hydrophones](https://www.orcasound.net/) deployed in the Puget Sound and has issued expert-validated alerts to authorities like the [Port of Seattle](https://quietsound.org/). 
 
-Recently, I've also spent time working across teams (multi-microphone processing, speech separation, ASR, diarization, NLP) for an [ambitious incubation project](https://www.youtube.com/watch?v=ddb3ZgAp9TA) targeting *both in-person & remote* conversations. Arguably the hardest ASR/NLP domain due to it's spontaneous structure + need for customization. For a complex product like this, it is paramount to *prioritize & measure the right things* - which I help with via error analysis.
+<!-- I've written about this incredible experience here. -->
 
-I entered into the code world via Python in 2015 ~6yrs ago (MATLAB doesn't really count, does it!). In a previous life in my undergraduate, I majored in Chemical Engineering - having seen hydrofracking & nicotine manufacture up close. As part of a minor in Control Systems, I was exposed to some signal processing, which has kind of come full circle with my long-time fascination with audio at the moment :)
+I entered the code world ~7yrs ago with an unconventional career arc from a past life as a Chemical & Control Systems Engineer. Connecting the dots so far is a firm belief in my [ability to learn](https://twitter.com/ValaAfshar/status/1022297136300531713?s=20&t=SXYHzOC-ezEUx2Ea_CJ50Q), [product-minded](https://blog.pragmaticengineer.com/the-product-minded-engineer/) instincts to bridge worlds and a hunger to make meaningful magic.
+
+<!-- [timeline of career arc] -->
+
+<!-- [work portfolio part] -->
 
 <!-- Don't hesitate to reach out at [akashmjn] [at] [stanford] [dot] [edu] with any thoughts, collaborations, or opportunites! -->
