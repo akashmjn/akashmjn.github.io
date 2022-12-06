@@ -1,5 +1,7 @@
 # main links
 main:
+   - title: Blog
+     url: /blog
 #     Removing these until I cleanup and update the blog section
 #  - title: Projects
 #    url: /projects
