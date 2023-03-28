@@ -7,9 +7,9 @@ last_modified_at: "2023-03-28"
 date: "2022-03-28"
 ---
 
-<!-- neural network whisperer / product minded AI / pulse on AI zeitgeist / love for X -->
+<!-- weird tags? neural network whisperer / product minded AI / pulse on AI zeitgeist / love for X -->
 
-<!-- name pronounciation [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
+<!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
 
 👋 Hi, I’m Akash. I work on meeting transcription as a Sr. Applied Scientist at Microsoft. I’m on an R&D team that ships state-of-art speech recognition models to Azure APIs, or used to add magic to Microsoft products like [Copilot-assisted recap of meetings in Teams](https://www.theverge.com/2022/10/12/23400332/microsoft-teams-premium-intelligent-recap-live-translations). In this role I need to be tuned in to fast-evolving research, exercise judgement in connecting user experience with research/technology readiness and keep experimenting until we can ship high-quality models that improve the user experience.
 
@@ -25,7 +25,7 @@ Or carry on to read a small ramble about my non-traditional career arc thus far 
 
 - [2018- ] 🤖 <u>Started my tech career at Microsoft</u>. As someone with a non-traditional background, i've gotten to pick up industry scale "software and servers" skills, working with large codebases, distributed training, and data pipelines handling hundreds of terabytes. I've been fortunate to collaborate with expert PhDs in speech processing and witness evolution of the whole stack, as well as use my analytical eye to help my manager prioritize bottlenecks. Outside of work, I also co-founded an award-winning hackathon project that leverages AI to alert for orcas in the Pacific Northwest.
 
-- [2016-2018] 🤓 <u>At Stanford's [MS&E program](https://msande.stanford.edu/)</u> I initially aimed to become a PM or data scientist, but was soon drawn to more deeply understand and build technology. I balanced marketing, strategy & design classes with self-assembled technical electives. I delved into math (deep learning, audio signal processing), code (databases, implementing a heap allocator in C), and built a neural text-to-speech system that was [appreciated by Prof Richard Socher](https://twitter.com/RichardSocher/status/976638195528904704). They were two intense years, but gave me confidence in my ability to learn and bridge different worlds. I look forward to the [dots connecting in the future](https://www.goodreads.com/quotes/597449-you-can-t-connect-the-dots-looking-forward-you-can-only) :)
+- [2016-2018] 🤓 <u>At Stanford's </u>[MS&E program](https://msande.stanford.edu/) I initially aimed to become a PM or data scientist, but was soon drawn to more deeply understand and build technology. I balanced marketing, strategy & design classes with self-assembled technical electives. I delved into math (deep learning, audio signal processing), code (databases, implementing a heap allocator in C), and built a neural text-to-speech system that was [appreciated by Prof Richard Socher](https://twitter.com/RichardSocher/status/976638195528904704). They were two intense years, but gave me confidence in my ability to learn and bridge different worlds. I look forward to the [dots connecting in the future](https://www.goodreads.com/quotes/597449-you-can-t-connect-the-dots-looking-forward-you-can-only) :)
 
 - [2015-2016] 🤘 <u>Took a gap year before Stanford</u> and entered the code world through stints at startups in Bangalore. As a data scientist at [Ather Energy](https://www.atherenergy.com/), I contributed to an early roadmap for vehicle intelligence features on its [pioneering EV](https://cloud.google.com/customers/ather-energy). I dipped my feet in the dark arts of deep learning, self-studying the classic CS231n at my roommate's [AI for radiology startup](https://yourstory.com/companies/predible-health). I met some amazing people, got to witness the magic of crafting great, deep tech products in India, and have been inspired ever since.
 
