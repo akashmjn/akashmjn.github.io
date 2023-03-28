@@ -1,12 +1,13 @@
 # main links
 main:
-   - title: Blog
-     url: /blog
+  - title: Blog
+    url: /blog
+  - title: CV
+    url: /CV/03_2023.pdf  
+# updated on namesake
+
 #     Removing these until I cleanup and update the blog section
 #  - title: Projects
 #    url: /projects
 #  - title: "Other fun stuff"
 #    url: /otherfunstuff
-#     This resume is pretty old (2018)
-#   - title: Resume
-#     url: /resume/AkashMahajan_resume.pdf
