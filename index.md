@@ -17,9 +17,9 @@ date: "2022-03-28"
 
 <!-- I've written about this incredible experience here. -->
 
-Professionally thus far, i've most enjoyed being a good teammate, and contributing to design and engineering of products that make magic. You can find details in my CV at []. 
+Professionally thus far, i've most enjoyed being a good teammate, and contributing to design and engineering of products that make magic. You can find more details in my CV. 
 
-Or carry on to read a small ramble about my non-traditional career arc thus far :)
+If you're curious, carry on to read a brief ramble about my unconventional career arc thus far :)
 
 <!-- [timeline of career arc], reasons to include: (i) range, ability to learn (ii) between the CV lines (iii) aid to my own reflection (iv) personal touch  -->
 
