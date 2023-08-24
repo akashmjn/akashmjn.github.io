@@ -17,7 +17,7 @@ date: "2022-03-28"
 
 <!-- I've written about this incredible experience here. -->
 
-In my professional journey so far, being a good teammate and contributing to the design and engineering of products that make magic have been the most enjoyable aspects for me. You can find more details on my [CV](/CV/03_2023.pdf). 
+In my professional journey so far, being a good teammate and contributing to the design and engineering of products that make magic have been the most enjoyable aspects for me. You can find more details on my [CV](/CV/08_2023.pdf). 
 
 If you're curious, carry on to read a brief ramble about my unconventional career arc thus far :)
 
