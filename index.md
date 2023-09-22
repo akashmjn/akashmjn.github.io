@@ -11,13 +11,16 @@ date: "2022-03-28"
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
 
-👋 Hi, I’m Akash. I work on meeting transcription as a Sr. Applied Scientist at Microsoft. I’m on an R&D team that ships state-of-art speech recognition models to Azure APIs, as well as powers Microsoft products like [Copilot-assisted](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) [recap of meetings in Teams](https://www.engadget.com/microsoft-teams-premium-365-160053805.html). In this role I need to be tuned in to fast-evolving research, exercise judgement in connecting user experience with research/technology readiness and keep experimenting until we can ship high-quality models that improve the user experience.
+👋 Hi, I’m Akash. I work on meeting transcription as a Sr. Applied Scientist at Microsoft. I’m on an R&D team that ships state-of-art speech recognition models to Azure APIs, as well as powers Microsoft products like [Copilot-assisted](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) [recap of meetings in Teams](https://www.engadget.com/microsoft-teams-premium-365-160053805.html). In this role I need to be on top of fast-moving research, exercise judgement in connecting user experience with technology readiness and keep experimenting until we can ship high-quality models that improve the user experience.
 
-🐋 At the [Microsoft global hackathon](https://news.microsoft.com/life/hackathon/), I also co-founded OrcaHello, an [open-source](https://github.com/orcasound/aifororcas-livesystem) AI system that monitors and alerts for orcas in the Pacific Northwest. Since going live in September 2020 it has allowed experts to moderate 3 locations, reducing the time needed by ~400x and has flagged over 60 endangered SRKW events so far. Learn more at [ai4orcas.net](https://ai4orcas.net/).
+🐥🗣️ I recently open-sourced [tinydiarize](https://github.com/akashmjn/tinyDiarize): an extension of OpenAI's Whisper ASR model for speaker diarization, that is runnable on Macbooks/iPhones via an integration in [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771).
+
+
+🐋 At the 2020 [Microsoft global hackathon](https://news.microsoft.com/life/hackathon/), I also co-founded [OrcaHello, an open-source](https://github.com/orcasound/aifororcas-livesystem) AI system that monitors and issues 24x7 expert-validated alerts for SRKW orcas near 3 hydrophone locations in the Pacific Northwest. You can listen to last month's detections [here](http://orcahello.ai4orcas.net/Dashboard)!
 
 <!-- I've written about this incredible experience here. -->
 
-In my professional journey so far, being a good teammate and contributing to the design and engineering of products that make magic have been the most enjoyable aspects for me. You can find more details on my [CV](/CV/08_2023.pdf). 
+Broadly speaking, I've experience with designing/debugging/deploying various audio-based deep learning systems. I like wearing multiple hats and have most enjoyed contributing to both design and engineering of products that make magic. You can find more details on my [CV](/CV/08_2023.pdf) or find me on [Twitter/X/Elon-app](https://twitter.com/akashmjn).
 
 If you're curious, carry on to read a brief ramble about my unconventional career arc thus far :)
 
