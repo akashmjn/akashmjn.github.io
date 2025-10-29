@@ -21,11 +21,13 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 
 Wrangled millions of pages to land the first $ millions in enterprise contracts :)
 
-* 0→1: Built the core document understanding system (parsing, representation and ingestion) powering context retrieval platform over multimodal enterprise documents, also released as standalone API. Conducted applied research on document representation for agentic retrieval systems.
-* Tech Lead / Manager: Mentored, managed, interviewed candidates, DRI with customers, marketing, PM.
+* 0→1: Built the core multimodal document understanding system (parsing, representation and ingestion) powering retrieval for the context layer over enterprise documents. Also released as standalone API. 
+* Applied research: Vision models, VLM workflow/agent framework, document representation for agentic retrieval (demo below).
+* Tech Lead / Manager: Mentored, managed, interviewed candidates, DRI with forward-deployed eng, marketing, PM.
 * Links:
     * [Introducing the Document Parser for RAG](https://contextual.ai/blog/document-parser-for-rag/)
     * [Demo: llms.txt for Documents - Beyond Retrieval to Agentic Navigation](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BDHx4XhiTTqa5vQToJtWF3w%3D%3D)
+
 
 ## Microsoft
 
@@ -34,13 +36,12 @@ Fun fact: ~6M hours of monthly traffic equals 1 *year* of conversations transcri
 * Shipped and optimized state of art models transcribing millions of hours of monthly conversations on Azure and Microsoft Teams APIs.
 * Research engineering: data pipeline, distributed training framework, profiling, optimizing for inference in ONNX/C++
 * Applied research: Scalability focused architecture design, data & training recipes, error analysis, evaluation metrics
-* Granted a patent and made a contribution to whisper.cpp (38k stars)
+* Was one of the few non-PhD senior members on the team :)
 * Links:
     * [Batch transcription - Azure AI Speech service](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription)
-    * [tinydiarize: speaker diarization prototype in whisper.cpp](https://x.com/ggerganov/status/1676271637572853771)
+    * [OSS contribution - tinydiarize: speaker diarization prototype in whisper.cpp](https://x.com/ggerganov/status/1676271637572853771)
     * [US Patent US11563784B2: Caption assisted calling to maintain connection in challenging network conditions](https://patents.google.com/patent/US11563784B2/en)
 
-Was one of the few non-PhD senior members on the team :)
 
 # Misc 
 
