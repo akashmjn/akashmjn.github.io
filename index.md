@@ -3,8 +3,8 @@ layout: archive
 author_profile: true
 title: 
 redirect_from: /about/
-last_modified_at: "2023-03-28"
-date: "2022-03-28"
+last_modified_at: "2025-10-28"
+date: "2025-10-28"
 ---
 
 <!-- weird tags? neural network whisperer / product minded AI / pulse on AI zeitgeist / love for X -->
@@ -13,7 +13,7 @@ date: "2022-03-28"
 
 👋 Hi, I’m Akash, an applied researcher/engineer with industry experience in speech, audio (at [Microsoft](https://www.microsoft.com/en-us/research/group/cognitive-services-research/speech/)), and most recently multi-modal document extraction, understanding and retrieval (at [Contextual AI](https://contextual.ai/)). I recently realized this completes the trio of audio, vision and language multimodality. :)
 
-I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out what’s next. Right now I’m exploring real-time, on-device neural audio with applications to music and voice.
+I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out what’s next. Currently exploring real-time, on-device neural audio in the context of music and voice.
 
 # Work 
 
@@ -44,7 +44,7 @@ Was one of the few non-PhD senior members on the team :)
 
 # Misc 
 
-- [2023] 🐥🗣️ Open-sourced [tinydiarize](https://github.com/akashmjn/tinyDiarize): an extension of OpenAI's Whisper ASR model for speaker diarization, that is runnable on Macbooks/iPhones via an integration in [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771).
-- [2020] 🐋 Co-founded OrcaHello, an AI system for 24/7 Southern Resident Killer Whale detection across Pacific Northwest hydrophones, which received a $30,000 AI for Earth Innovation Grant in 2020 and has been operating live for >4 years. Our team collaborated with Scott Veirs. You can listen to last month's detections [here](http://orcahello.ai4orcas.net/Dashboard)
+- [2023] 🐥🗣️ Open-sourced [tinydiarize](https://github.com/akashmjn/tinyDiarize): an extension of OpenAI's Whisper ASR model for speaker diarization. It is runnable on Macbooks/iPhones via a contribution to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars).
+- [2020] 🐋 Co-founded OrcaHello, a system for 24/7 Southern Resident Killer Whale detection across Pacific Northwest hydrophones, which received a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating live for >4 years - [listen here](http://orcahello.ai4orcas.net/Dashboard).
 
 <!-- Don't hesitate to reach out at [akashmjn.1] [at] [gmail] [dot] [--] with any thoughts, collaborations, or opportunites! -->
