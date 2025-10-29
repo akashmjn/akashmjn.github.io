@@ -11,7 +11,7 @@ date: "2025-10-28"
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
 
-👋 Hi, I’m Akash, an applied researcher/engineer with industry experience in speech, audio (at [Microsoft](https://www.microsoft.com/en-us/research/group/cognitive-services-research/speech/)), and most recently multi-modal document extraction, understanding and retrieval (at [Contextual AI](https://contextual.ai/)). I recently realized this completes the trio of audio, vision and language multimodality. :)
+👋 Hi, I’m Akash, an applied researcher/engineer with experience in speech, audio (at [Microsoft](https://www.microsoft.com/en-us/research/group/cognitive-services-research/speech/)), and most recently multi-modal document understanding and retrieval (at [Contextual AI](https://contextual.ai/)). Turns out that this completes the trio of audio, vision & text AI multimodality. :)
 
 I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out what’s next. Currently exploring real-time, on-device neural audio in the context of music and voice.
 
@@ -21,7 +21,7 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 
 Wrangled millions of pages to land the first $ millions in enterprise contracts :)
 
-* 0→1: Built the core multimodal document understanding system (parsing, representation and ingestion) powering retrieval for the context layer over enterprise documents. Also released as standalone API. 
+* 0→1: Built the core multimodal document understanding system (parsing, representation and ingestion) powering retrieval for the context layer over enterprise documents.
 * Applied research: Vision models, VLM workflow/agent framework, document representation for agentic retrieval (demo below).
 * Tech Lead / Manager: Mentored, managed, interviewed candidates, DRI with forward-deployed eng, marketing, PM.
 * Links:
@@ -39,13 +39,12 @@ Fun fact: ~6M hours of monthly traffic equals 1 *year* of conversations transcri
 * Was one of the few non-PhD senior members on the team :)
 * Links:
     * [Batch transcription - Azure AI Speech service](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription)
-    * [OSS contribution - tinydiarize: speaker diarization prototype in whisper.cpp](https://x.com/ggerganov/status/1676271637572853771)
     * [US Patent US11563784B2: Caption assisted calling to maintain connection in challenging network conditions](https://patents.google.com/patent/US11563784B2/en)
 
 
 # Misc 
 
-- [2023] 🐥🗣️ Open-sourced [tinydiarize](https://github.com/akashmjn/tinyDiarize): an extension of OpenAI's Whisper ASR model for speaker diarization. It is runnable on Macbooks/iPhones via a contribution to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars).
-- [2020] 🐋 Co-founded OrcaHello, a system for 24/7 Southern Resident Killer Whale detection across Pacific Northwest hydrophones, which received a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating live for >4 years - [listen here](http://orcahello.ai4orcas.net/Dashboard).
+- [2023] 🐥🗣️ Open source contribution to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars). [tinydiarize](https://github.com/akashmjn/tinyDiarize) is a lightweight prototype extending OpenAI's Whisper model for speaker diarization, runnable on Macbooks/iPhones.
+- [2020] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/), a system for 24/7 monitoring of Southern Resident Killer Whales across many underwater hydrophones in the Pacific Northwest. It was awarded a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating live for >4 years - [listen here](http://orcahello.ai4orcas.net/Dashboard).
 
 <!-- Don't hesitate to reach out at [akashmjn.1] [at] [gmail] [dot] [--] with any thoughts, collaborations, or opportunites! -->
