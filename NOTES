@@ -18,6 +18,11 @@ SETUP:
 
 
 INFO:
+* analytics:
+    most imp concerns: update site code/tags so tracking happens properly, update console to get proper reports/alerts
+    * (July 1 2024) universal analytics property was auto migrated to GA4
+    * (Nov 1 2025) updated to use gtag.js not analytics.js
+    * (Nov 1 2025) google search property also added for akashmjn.me
 * Info on Github pages and Jekyll
     https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
 * Custom domain was setup as below (just adding CNAME file not sufficient) 
