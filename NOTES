@@ -16,6 +16,17 @@ SETUP:
     (Jekyll docs walkthrough: https://jekyllrb.com/docs/step-by-step/01-setup/)
         `bundle exec jekyll serve`
 
+
+INFO:
+* Info on Github pages and Jekyll
+    https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
+* Custom domain was setup as below (just adding CNAME file not sufficient) 
+    https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain
+* Build/deployment process is setup to "publish from branch"
+    https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch
+    (seems to run some default jekyll build process, but can't find the yaml for it)
+
+
 TODOs:
 * try updating the version & theme 
 * do some cleanup (don't sweat it more than 30min)
