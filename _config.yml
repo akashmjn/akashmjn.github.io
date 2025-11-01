@@ -87,9 +87,12 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # "google-universal", "custom"
+  provider               : "cloudflare" # "google-gtag", "google-universal", "custom"
   google:
-    tracking_id          : "G-PEYCEQHT9B"
+    tracking_id          : "UA-90544614-1"
+    gtag_id              : "G-PEYCEQHT9B"
+  cloudflare:
+    token                : "0c11502a59694a3f99be1d17a0f7ee6d"
       
 # Site Author
 author:
