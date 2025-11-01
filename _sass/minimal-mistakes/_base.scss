@@ -201,6 +201,50 @@ li ol {
   margin-top: 0.0em;
 }
 
+/* details and summary (collapsible sections) */
+
+details {
+  margin: 1.5em 0;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+}
+
+summary {
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+
+  /* Remove default marker and add custom marker with styling */
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 0.5em;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+    font-size: 0.8em;
+  }
+
+  /* Headings inside summary appear inline without margins */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0.5em;
+    display: inline;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
 /*
    Media and embeds
    ========================================================================== */
