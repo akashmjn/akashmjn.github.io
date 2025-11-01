@@ -173,7 +173,7 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - scratch # WIP things and experiments
+  - scratch   # experiments and wip things
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
 keep_files:
