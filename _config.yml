@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Akash Mahajan"
 description              : "Akash Mahajan's personal website"
-url                      : "https://akashmjn.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://akashmjn.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -87,7 +87,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "cloudflare" # "google-gtag", "google-universal", "custom"
+  provider               : "google-gtag" # "google-gtag", "google-universal", "custom"
   google:
     tracking_id          : "UA-90544614-1"
     gtag_id              : "G-PEYCEQHT9B"

@@ -22,8 +22,7 @@ INFO:
     * (July 1 2024) universal analytics property was auto migrated to GA4
     * (Nov 1 2025) updated to use gtag.js not analytics.js
     * (Nov 1 2025) google search property added for akashmjn.me
-    * (Nov 1 2025) took out google analytics and moved to cloudflare, hope headaches are over
-
+    * (Nov 1 2025) looked at cloudflare, only 30 day history, gotta stick it out w google, sadness
     * most imp concerns:
         update site code/tags so tracking happens properly
         update console reports/alerts (questions: for real user visits, when, where does it come from, what is visted)
