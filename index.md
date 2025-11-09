@@ -1,5 +1,7 @@
 ---
 layout: archive
+header:
+  waves: true
 author_profile: true
 title: 
 redirect_from: /about/
