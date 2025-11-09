@@ -87,8 +87,8 @@
 			}
 
 			var style = window.getComputedStyle(canvas);
-			var background = (style.getPropertyValue('--wave-background') || '').trim();
-			var stroke = (style.getPropertyValue('--wave-stroke') || '').trim();
+			var background = (style.getPropertyValue('--waves-background') || '').trim();
+			var stroke = (style.getPropertyValue('--waves-stroke') || '').trim();
 
 			backgroundColor = background || settings.fallbackBackgroundColor;
 			strokeColor = stroke || settings.fallbackStrokeColor;
