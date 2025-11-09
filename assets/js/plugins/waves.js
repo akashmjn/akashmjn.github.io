@@ -35,6 +35,7 @@
 		autoInitSelector: '#waves',
 		autoStart: true,
 		autoResize: true,
+		autoDetectColors: true,
 		numLines: 40,
 		numPoints: 300,
 		waveWidthFactor: 0.6,
@@ -78,6 +79,7 @@
 		var destroyed = false;
 		var backgroundColor = settings.fallbackBackgroundColor;
 		var strokeColor = settings.fallbackStrokeColor;
+		var colorSchemeMediaQuery = null;
 
 		var updateCanvasColors = function () {
 			if (!settings.autoDetectColors) {
@@ -188,6 +190,10 @@
 			if (settings.autoResize) {
 				window.removeEventListener('resize', resize);
 			}
+            if (settings.autoDetectColors && colorSchemeMediaQuery) {
+                colorSchemeMediaQuery.removeEventListener('change', updateCanvasColors);
+                colorSchemeMediaQuery = null;
+            }
 			destroyed = true;
 		};
 
@@ -208,6 +214,11 @@
 		settings.autoDetectColors = settings.autoDetectColors !== false;
 
 		resize();
+
+        if (settings.autoDetectColors) {
+            colorSchemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            colorSchemeMediaQuery.addEventListener('change', updateCanvasColors);
+        }
 
 		if (settings.autoResize) {
 			window.addEventListener('resize', resize);
