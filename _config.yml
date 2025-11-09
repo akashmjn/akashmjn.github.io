@@ -97,7 +97,7 @@ analytics:
 # Site Author
 author:
   # name             : "Akash Mahajan"
-  avatar           : /assets/images/me-2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/me-3.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   # bio              : "[DOMAIN_NAME] @ [STANFORD] dot [EDU]"
   location         : "Redwood City, CA, USA"
   # email            : 
