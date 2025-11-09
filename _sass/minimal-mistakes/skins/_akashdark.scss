@@ -22,6 +22,8 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 .page__hero_canvas {
   --waves-background: #001d17;
   --waves-stroke: #d4dedd;
+}
+.page__hero_canvas_container {
   border-bottom: 1px solid $border-color;
 }
 

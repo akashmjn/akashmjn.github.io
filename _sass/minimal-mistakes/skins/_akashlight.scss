@@ -18,6 +18,8 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 .page__hero_canvas {
   --waves-background: #d4dedd;
   --waves-stroke: #21312e;
+}
+.page__hero_canvas_container {
   border-bottom: 1px solid $border-color;
 }
 

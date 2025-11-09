@@ -38,6 +38,7 @@
 		autoDetectColors: true,
 		numLines: 40,
 		numPoints: 300,
+        maxCanvasWidth: 1088,  // times 0.6 ~= max width of text column
 		waveWidthFactor: 0.6,
 		waveHeightFactor: 0.6,
 		baseAmplitude: 80,
@@ -111,8 +112,8 @@
 
 		var resize = function () {
 			if (destroyed) return;
-			canvas.width = window.innerWidth;
-			canvas.height = window.innerHeight;
+			canvas.width = Math.min(window.innerWidth, settings.maxCanvasWidth);
+			canvas.height = window.innerHeight * 0.9;
 			updateCanvasColors();
 			initializeLines();
 		};
