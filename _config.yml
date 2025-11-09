@@ -12,8 +12,8 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin_light    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-minimal_mistakes_skin_dark     : "dark"
+minimal_mistakes_skin_light    : "akashlight" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin_dark     : "akashdark"
 
 # Site Settings
 locale                   : "en-US"
@@ -97,7 +97,7 @@ analytics:
 # Site Author
 author:
   # name             : "Akash Mahajan"
-  avatar           : /assets/images/me-2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/me-3.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   # bio              : "[DOMAIN_NAME] @ [STANFORD] dot [EDU]"
   location         : "Redwood City, CA, USA"
   # email            : 
