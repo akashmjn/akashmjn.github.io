@@ -48,11 +48,16 @@
         border: 1px solid $border-color;
       }
       @if ($buttoncolor == light-outline) {
-        border: 1px solid #fff;
+        border: 1px solid $border-color;
+        color: $text-color;
       }
 
       &:visited {
-        @include yiq-contrasted($color);
+        @if ($buttoncolor == light-outline) {
+          color: $text-color;
+        } @else {
+          @include yiq-contrasted($color);
+        }
       }
 
       &:hover {

@@ -18,6 +18,15 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
+/* Waves hero canvas colors */
+.page__hero_canvas {
+  --waves-background: #001d17;
+  --waves-stroke: #d4dedd;
+}
+.page__hero_canvas_container {
+  border-bottom: 1px solid $border-color;
+}
+
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
 .page__footer-follow .social-icons i,

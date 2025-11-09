@@ -1,5 +1,9 @@
 ---
 layout: archive
+hero:
+  waves: true
+  button_url: "#about"
+  button_label: "About ⬇"
 author_profile: true
 title: 
 redirect_from: /about/
@@ -8,6 +12,8 @@ date: "2025-10-31"
 ---
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
+
+# About
 
 👋 Hi, I’m Akash, an applied researcher/engineer with experience in speech, audio (at [Microsoft](https://www.microsoft.com/en-us/research/group/cognitive-services-research/speech/)), and most recently multi-modal document understanding and retrieval (at [Contextual AI](https://contextual.ai/)). Turns out this completes the trio of audio, vision & text AI multimodality. :)
 

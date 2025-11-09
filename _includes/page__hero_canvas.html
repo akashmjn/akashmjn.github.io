@@ -1,0 +1,20 @@
+<style>
+    .page__hero_canvas_container {
+        position: relative;
+    }
+    .page__hero_canvas_button {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+</style>
+<div class="page__hero_canvas_container" align="center">
+    <canvas id="waves" class="page__hero_canvas"></canvas>
+    {% if page.hero.button_url and page.hero.button_label %}
+    <a class="page__hero_canvas_button btn btn--light-outline" href="{{ page.hero.button_url }}">
+        {{ page.hero.button_label }}
+    </a>
+    {% endif %}
+</div>
