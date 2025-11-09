@@ -68,8 +68,20 @@ const LINE_MODULATION_FREQ = 0.07;
 
 // Visual Styling
 const LINE_WIDTH = 1.5;
-const BACKGROUND_COLOR = '#000';
-const STROKE_COLOR = '#fff';
+const FALLBACK_BACKGROUND_COLOR = '#000';
+const FALLBACK_STROKE_COLOR = '#fff';
+
+let backgroundColor = FALLBACK_BACKGROUND_COLOR;
+let strokeColor = FALLBACK_STROKE_COLOR;
+
+function updateCanvasColors() {
+    const style = window.getComputedStyle(canvas);
+    const background = style.getPropertyValue('--wave-background').trim();
+    const stroke = style.getPropertyValue('--wave-stroke').trim();
+
+    backgroundColor = background || FALLBACK_BACKGROUND_COLOR;
+    strokeColor = stroke || FALLBACK_STROKE_COLOR;
+}
 
 // ============================================================================
 // INITIALIZATION
@@ -97,6 +109,7 @@ function initializeLines() {
 function resize() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    updateCanvasColors();
     initializeLines(); // Recalculate line positions on resize
 }
 resize();
@@ -139,10 +152,10 @@ function generateWavePoints(line, centerY) {
 }
 
 function draw() {
-    ctx.fillStyle = BACKGROUND_COLOR;
+    ctx.fillStyle = backgroundColor;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
-    ctx.strokeStyle = STROKE_COLOR;
+    ctx.strokeStyle = strokeColor;
     ctx.lineWidth = LINE_WIDTH;
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
