@@ -12,59 +12,59 @@ const WAVE_WIDTH_FACTOR = 0.6; // Percentage of canvas width to use for waves
 const WAVE_HEIGHT_FACTOR = 0.6; // Percentage of canvas height to use for waves
 
 // Base Wave Shape
-const BASE_AMPLITUDE = 80;
-const BELL_CURVE_FACTOR = 3; // Controls the spread of the bell curve
-
-// Wave Component Frequencies
-const WAVE_FREQUENCIES = {
-    wave1: 8,
-    wave2: 15,
-    wave3: 25,
-    noise1: 50,
-    noise2: 80,
-    noise3: 120,
-    noise4: 150
-};
-
-// Wave Component Amplitudes (multipliers)
-const WAVE_AMPLITUDES = {
-    wave1: 0.4,
-    wave2: 0.3,
-    wave3: 0.3,
-    noise1: 0.15,
-    noise2: 0.12,
-    noise3: 0.1,
-    noise4: 0.08
-};
-
-// Wave Component Frequencies (phase multipliers)
-const WAVE_PHASE_MULTIPLIERS = {
-    wave1: 0.5,
-    wave2: 0.3,
-    wave3: 0.2,
-    noise1: 0.8,
-    noise2: 1.2,
-    noise3: 1.5,
-    noise4: 2.0
-};
-
-// Animation
-const TIME_SPEED = 0.04; // Time increment per frame
-const TIME_MULTIPLIERS = {
-    wave1: 0.3,
-    wave2: 0.5,
-    wave3: 0.7,
-    noise1: 0.4,
-    noise2: 0.3,
-    noise3: 0.25,
-    noise4: 0.2,
-    lineModulation: 0.2
-};
+const BASE_AMPLITUDE = 60;
+const BELL_CURVE_FACTOR = 8; // Controls the spread of the bell curve
 
 // Line Variation
 const LINE_MODULATION_RANGE = 0.3;
 const LINE_MODULATION_BASE = 0.7;
 const LINE_MODULATION_FREQ = 0.07;
+
+// Wave Component Frequencies
+// const WAVE_FREQUENCIES = {
+//     wave1: 8,
+//     wave2: 15,
+//     wave3: 25,
+//     noise1: 50,
+//     noise2: 80,
+//     noise3: 120,
+//     noise4: 150
+// };
+
+// Wave Component Amplitudes (multipliers)
+// const WAVE_AMPLITUDES = {
+//     wave1: 0.4,
+//     wave2: 0.3,
+//     wave3: 0.3,
+//     noise1: 0.15,
+//     noise2: 0.12,
+//     noise3: 0.1,
+//     noise4: 0.08
+// };
+
+// Wave Component Frequencies (phase multipliers)
+// const WAVE_PHASE_MULTIPLIERS = {
+//     wave1: 0.5,
+//     wave2: 0.3,
+//     wave3: 0.2,
+//     noise1: 0.8,
+//     noise2: 1.2,
+//     noise3: 1.5,
+//     noise4: 2.0
+// };
+
+// Animation
+const TIME_SPEED = 0.04; // Time increment per frame
+const TIME_MULTIPLIERS = {
+    // wave1: 0.3,
+    // wave2: 0.5,
+    // wave3: 0.7,
+    // noise1: 0.4,
+    // noise2: 0.3,
+    // noise3: 0.25,
+    // noise4: 0.2,
+    lineModulation: 0.2
+};
 
 // Visual Styling
 const LINE_WIDTH = 1.5;
@@ -125,7 +125,7 @@ function generateWavePoints(line, centerY) {
         const normalizedX = (i / NUM_POINTS - 0.5) * 2;  // range [-1, 1]
         
         // Create the distinctive pulsar wave shape with bell curve
-        const baseAmplitude = Math.exp(-normalizedX * normalizedX * BELL_CURVE_FACTOR) * BASE_AMPLITUDE;
+        const envelope = Math.exp(-normalizedX * normalizedX * BELL_CURVE_FACTOR) * BASE_AMPLITUDE;
         
         // // Add multiple frequency components for complexity
         // const wave1 = Math.sin((normalizedX * WAVE_FREQUENCIES.wave1 + time.value * TIME_MULTIPLIERS.wave1 + line.phase) * WAVE_PHASE_MULTIPLIERS.wave1) * WAVE_AMPLITUDES.wave1;
@@ -138,8 +138,8 @@ function generateWavePoints(line, centerY) {
         // const noise3 = Math.sin((normalizedX * WAVE_FREQUENCIES.noise3 + time.value * TIME_MULTIPLIERS.noise3 + line.phase * 5) * WAVE_PHASE_MULTIPLIERS.noise3) * WAVE_AMPLITUDES.noise3;
         // const noise4 = Math.sin((normalizedX * WAVE_FREQUENCIES.noise4 + time.value * TIME_MULTIPLIERS.noise4 + line.phase * 6) * WAVE_PHASE_MULTIPLIERS.noise4) * WAVE_AMPLITUDES.noise4;
         
-        // const amplitude = baseAmplitude * (1 + wave1 + wave2 + wave3 + noise1 + noise2 + noise3 + noise4);
-        const amplitude = baseAmplitude;
+        // const amplitude = envelope * (1 + wave1 + wave2 + wave3 + noise1 + noise2 + noise3 + noise4);
+        const amplitude = envelope;
         
         // Vary amplitude by line position for that classic look
         const lineModulation = Math.sin(line.phase + i * LINE_MODULATION_FREQ + time.value * TIME_MULTIPLIERS.lineModulation) * LINE_MODULATION_RANGE + LINE_MODULATION_BASE;
