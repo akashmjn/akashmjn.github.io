@@ -3,7 +3,7 @@ layout: archive
 hero:
   waves: true
   button_url: "#about"
-  button_label: "About ⬇"
+  button_label: "About"
 author_profile: true
 title: 
 redirect_from: /about/
