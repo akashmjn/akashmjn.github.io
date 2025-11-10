@@ -7,18 +7,18 @@ const ctx = canvas.getContext('2d');
 
 // Wave Geometry
 const NUM_LINES = 40;
-const NUM_POINTS = 300;
-const WAVE_WIDTH_FACTOR = 0.6; // Percentage of canvas width to use for waves
-const WAVE_HEIGHT_FACTOR = 0.6; // Percentage of canvas height to use for waves
+const NUM_POINTS = 200;
+const DRAW_AREA_WIDTH_RATIO = 0.6;      // Percentage of canvas width to use for waves
+const DRAW_AREA_HEIGHT_RATIO = 0.6;     // Percentage of canvas height to use for waves
 
-// Base Wave Shape
-const BASE_AMPLITUDE = 60;
-const BELL_CURVE_FACTOR = 8; // Controls the spread of the bell curve
+// Envelope Shape
+const ENVELOPE_AMPLITUDE = 0.08;    // In yRelative units [0, 1]
+const ENVELOPE_BELL_INV_VARIANCE = 8;        // Controls the spread of the bell curve
 
 // Line Variation
-const LINE_MODULATION_RANGE = 0.3;
-const LINE_MODULATION_BASE = 0.7;
-const LINE_MODULATION_FREQ = 0.07;
+const WAVE_MODULATION_RANGE = 0.3;
+const WAVE_MODULATION_FLOOR = 0.9;
+const WAVE_MODULATION_FREQ = 14.0;
 
 // Wave Component Frequencies
 // const WAVE_FREQUENCIES = {
@@ -54,7 +54,7 @@ const LINE_MODULATION_FREQ = 0.07;
 // };
 
 // Animation
-const TIME_SPEED = 0.04; // Time increment per frame
+const TIME_SPEED = 0.016;    // Time increment per frame
 const TIME_MULTIPLIERS = {
     // wave1: 0.3,
     // wave2: 0.5,
@@ -63,7 +63,7 @@ const TIME_MULTIPLIERS = {
     // noise2: 0.3,
     // noise3: 0.25,
     // noise4: 0.2,
-    lineModulation: 0.2
+    waveModulation: 1.0
 };
 
 // Visual Styling
@@ -118,8 +118,8 @@ initializeWaveStates();
 window.addEventListener('resize', resize);
 
 function updateDrawArea() {
-    drawArea.width = canvas.width * WAVE_WIDTH_FACTOR;
-    drawArea.height = canvas.height * WAVE_HEIGHT_FACTOR;
+    drawArea.width = canvas.width * DRAW_AREA_WIDTH_RATIO;
+    drawArea.height = canvas.height * DRAW_AREA_HEIGHT_RATIO;
     drawArea.xStart = (canvas.width - drawArea.width) / 2;
     drawArea.yStart = (canvas.height - drawArea.height) / 2;
 }
@@ -134,7 +134,7 @@ function generateWavePoints(waveState, centerY) {
         const xRelative = (i / NUM_POINTS - 0.5) * 2;  // range [-1, 1]
         
         // Create the distinctive pulsar wave shape with bell curve
-        const envelope = Math.exp(-xRelative * xRelative * BELL_CURVE_FACTOR) * BASE_AMPLITUDE;
+        const envelope = Math.exp(-xRelative * xRelative * ENVELOPE_BELL_INV_VARIANCE) * ENVELOPE_AMPLITUDE;
         
         // // Add multiple frequency components for complexity
         // const wave1 = Math.sin((xRelative * WAVE_FREQUENCIES.wave1 + time.value * TIME_MULTIPLIERS.wave1 + waveState.phase) * WAVE_PHASE_MULTIPLIERS.wave1) * WAVE_AMPLITUDES.wave1;
@@ -148,12 +148,11 @@ function generateWavePoints(waveState, centerY) {
         // const noise4 = Math.sin((xRelative * WAVE_FREQUENCIES.noise4 + time.value * TIME_MULTIPLIERS.noise4 + waveState.phase * 6) * WAVE_PHASE_MULTIPLIERS.noise4) * WAVE_AMPLITUDES.noise4;
         
         // const amplitude = envelope * (1 + wave1 + wave2 + wave3 + noise1 + noise2 + noise3 + noise4);
-        const amplitude = envelope;
         
         // offset modulation by waveState for that classic look
-        const lineModulation = Math.sin(waveState.phase + i * LINE_MODULATION_FREQ + time.value * TIME_MULTIPLIERS.lineModulation) * LINE_MODULATION_RANGE + LINE_MODULATION_BASE;
+        const waveModulation = Math.sin(waveState.phase + xRelative * WAVE_MODULATION_FREQ + time.value * TIME_MULTIPLIERS.waveModulation) * WAVE_MODULATION_RANGE + WAVE_MODULATION_FLOOR;
         
-        const y = drawArea.yStart + waveState.yRelative * drawArea.height - amplitude * lineModulation;
+        const y = drawArea.yStart + waveState.yRelative * drawArea.height - envelope * waveModulation * drawArea.height;
         points.push({ x, y: y });
     }
     
