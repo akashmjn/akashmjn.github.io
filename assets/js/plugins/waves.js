@@ -41,8 +41,8 @@
         maxCanvasWidth: 1088,  // times 0.6 ~= max width of text column
 		waveWidthFactor: 0.6,
 		waveHeightFactor: 0.6,
-		baseAmplitude: 80,
-		bellCurveFactor: 3,
+		baseAmplitude: 60,
+		bellCurveFactor: 8,
 		timeSpeed: 0.04,
 		lineModulationRange: 0.3,
 		lineModulationBase: 0.7,
@@ -73,13 +73,14 @@
 		settings.timeMultipliers = timeMultipliers;
 
 		var ctx = canvas.getContext('2d');
-		var lines = [];
+		var waveStates = [];
 		var time = { value: 0 };
 		var animationFrameId = null;
 		var isRunning = false;
 		var destroyed = false;
 		var backgroundColor = settings.fallbackBackgroundColor;
 		var strokeColor = settings.fallbackStrokeColor;
+		var drawArea = { xStart: 0, yStart: 0, width: 0, height: 0 };
 		var colorSchemeMediaQuery = null;
 
 		var updateCanvasColors = function () {
@@ -97,17 +98,22 @@
 			strokeColor = stroke || settings.fallbackStrokeColor;
 		};
 
-		var initializeLines = function () {
-			lines.length = 0;
-			var waveHeight = canvas.height * settings.waveHeightFactor;
-			var startY = (canvas.height - waveHeight) / 2;
+		var initializeWaveStates = function () {
+			waveStates.length = 0;
 
 			for (var i = 0; i < settings.numLines; i++) {
-				lines.push({
-					y: startY + (waveHeight / (settings.numLines + 1)) * (i + 1),
+				waveStates.push({
+					yRelative: (i + 1) / (settings.numLines + 1),
 					phase: Math.random() * Math.PI * 2
 				});
 			}
+		};
+
+		var updateDrawArea = function () {
+			drawArea.width = canvas.width * settings.waveWidthFactor;
+			drawArea.height = canvas.height * settings.waveHeightFactor;
+			drawArea.xStart = (canvas.width - drawArea.width) / 2;
+			drawArea.yStart = (canvas.height - drawArea.height) / 2;
 		};
 
 		var resize = function () {
@@ -115,20 +121,20 @@
 			canvas.width = Math.min(window.innerWidth, settings.maxCanvasWidth);
 			canvas.height = window.innerHeight * 0.9;
 			updateCanvasColors();
-			initializeLines();
+			updateDrawArea();
 		};
 
-		var generateWavePoints = function (line, centerY) {
+		var generateWavePoints = function (waveState, centerY) {
 			var points = [];
-			var width = canvas.width * settings.waveWidthFactor;
-			var startX = (canvas.width - width) / 2;
+			var width = drawArea.width;
+			var startX = drawArea.xStart;
 
 			for (var i = 0; i <= settings.numPoints; i++) {
-				var x = startX + (i / settings.numPoints) * width;
 				var normalizedX = (i / settings.numPoints - 0.5) * 2;
+				var x = startX + width / 2 + normalizedX * width / 2;
 				var baseAmplitude = Math.exp(-normalizedX * normalizedX * settings.bellCurveFactor) * settings.baseAmplitude;
 				var amplitude = baseAmplitude;
-				var lineModulation = Math.sin(line.phase + i * settings.lineModulationFreq + time.value * settings.timeMultipliers.lineModulation) * settings.lineModulationRange + settings.lineModulationBase;
+				var lineModulation = Math.sin(waveState.phase + i * settings.lineModulationFreq + time.value * settings.timeMultipliers.lineModulation) * settings.lineModulationRange + settings.lineModulationBase;
 				var y = centerY - amplitude * lineModulation;
 				points.push({ x: x, y: y });
 			}
@@ -150,9 +156,10 @@
 			ctx.lineCap = 'round';
 			ctx.lineJoin = 'round';
 
-			for (var i = 0; i < lines.length; i++) {
-				var line = lines[i];
-				var points = generateWavePoints(line, line.y);
+			for (var i = 0; i < waveStates.length; i++) {
+				var waveState = waveStates[i];
+				var centerY = drawArea.yStart + waveState.yRelative * drawArea.height;
+				var points = generateWavePoints(waveState, centerY);
 
 				if (!points.length) continue;
 
@@ -214,6 +221,7 @@
 
 		settings.autoDetectColors = settings.autoDetectColors !== false;
 
+		initializeWaveStates();
 		resize();
 
         if (settings.autoDetectColors) {
