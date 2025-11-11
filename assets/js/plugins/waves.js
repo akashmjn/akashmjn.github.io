@@ -42,7 +42,7 @@
         numLines: 40,
         numPoints: 200,
         lineWidth: 1.5,
-        timeSpeed: 0.016,
+		timeSpeedPerSecond: 1.2, // units per second
         envelopeAmplitude: 0.08,
         envelopeBellInvVariance: 8,
         waveModulationRange: 0.3,
@@ -75,6 +75,7 @@
 		var ctx = canvas.getContext('2d');
 		var waveStates = [];
 		var time = { value: 0 };
+		var lastFrameTimestamp = null;
 		var animationFrameId = null;
 		var isRunning = false;
 		var destroyed = false;
@@ -143,11 +144,21 @@
 			return points;
 		};
 
-		var draw = function () {
+		var draw = function (timestamp) {
 			if (!isRunning || destroyed) {
 				animationFrameId = null;
 				return;
 			}
+
+			if (lastFrameTimestamp !== null) {
+				var deltaSeconds = (timestamp - lastFrameTimestamp) / 1000;
+				if (deltaSeconds > 0) {
+					time.value += settings.timeSpeedPerSecond * deltaSeconds;
+				}
+			} else {
+				time.value += settings.timeSpeedPerSecond * (1 / 60);
+			}
+			lastFrameTimestamp = timestamp;
 
 			ctx.fillStyle = backgroundColor;
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -173,13 +184,13 @@
 				ctx.stroke();
 			}
 
-			time.value += settings.timeSpeed;
 			animationFrameId = window.requestAnimationFrame(draw);
 		};
 
 		var start = function () {
 			if (isRunning || destroyed) return;
 			isRunning = true;
+			lastFrameTimestamp = null;
 			animationFrameId = window.requestAnimationFrame(draw);
 		};
 
@@ -190,6 +201,7 @@
 				window.cancelAnimationFrame(animationFrameId);
 				animationFrameId = null;
 			}
+			lastFrameTimestamp = null;
 		};
 
 		var destroy = function () {

@@ -54,7 +54,7 @@ const WAVE_MODULATION_FREQ = 14.0;
 // };
 
 // Animation
-const TIME_SPEED = 0.016;    // Time increment per frame
+const TIME_SPEED_PER_SECOND = 1.2;    // Time increment per second
 const TIME_MULTIPLIERS = {
     // wave1: 0.3,
     // wave2: 0.5,
@@ -93,6 +93,9 @@ const time = { value: 0 };
 // xRelative [-1, 1] -> xStart + width / 2 + xRelative * width / 2
 // yRelative [0, 1]  -> yStart + yRelative * height
 const drawArea = { xStart: 0, yStart: 0, width: 0, height: 0 };
+let lastFrameTimestamp = null;
+let fps = 0;
+const FPS_SMOOTHING = 0.9;
 
 // Initialize waveState (y position, phase)
 function initializeWaveStates() {
@@ -159,7 +162,17 @@ function generateWavePoints(waveState, centerY) {
     return points;
 }
 
-function draw() {
+function draw(timestamp) {
+    if (lastFrameTimestamp !== null) {
+        const deltaSeconds = (timestamp - lastFrameTimestamp) / 1000;
+        const currentFps = deltaSeconds > 0 ? 1 / deltaSeconds : 0;
+        fps = fps * FPS_SMOOTHING + currentFps * (1 - FPS_SMOOTHING);
+        time.value += TIME_SPEED_PER_SECOND * deltaSeconds;
+    } else {
+        time.value += TIME_SPEED_PER_SECOND * (1 / 60);
+    }
+    lastFrameTimestamp = timestamp;
+
     ctx.fillStyle = backgroundColor;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
@@ -182,9 +195,12 @@ function draw() {
         ctx.stroke();
     });
     
-    time.value += TIME_SPEED;
+    ctx.fillStyle = strokeColor;
+    ctx.font = '16px monospace';
+    ctx.fillText(`${fps.toFixed(1)} fps`, 12, 24);
+
     requestAnimationFrame(draw);
 }
 
-draw();
+requestAnimationFrame(draw);
 
