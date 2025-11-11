@@ -172,6 +172,7 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
+  - NOTES
   - tmp
   - scratch   # experiments and wip things
   - /docs # ignore Minimal Mistakes /docs

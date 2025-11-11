@@ -18,6 +18,11 @@ SETUP:
 
 
 INFO:
+* waves JS animation canvas:
+    implemented as an imported js script under assets/js/plugins/waves.js
+    this hyrates a <canvas> element added by _layouts/archive.html and _includes/page__hero_canvas.html
+    on JS updates, needs to be recompiled manually into `main.min.js` using `npm run build:js`
+    then regular `bundle exec jekyll serve` will pick up the changes
 * analytics:
     * (July 1 2024) universal analytics property was auto migrated to GA4
     * (Nov 1 2025) updated to use gtag.js not analytics.js
