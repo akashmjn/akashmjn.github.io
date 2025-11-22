@@ -7,8 +7,8 @@ hero:
 author_profile: true
 title: 
 redirect_from: /about/
-last_modified_at: "2025-10-31"
-date: "2025-10-31"
+last_modified_at: "2025-11-22"
+date: "2025-11-22"
 ---
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
@@ -58,7 +58,33 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 
 # Misc 
 
+<details>
+<summary>
+<h2>Open source</h2>
+</summary>
+
+<div markdown="1">
 - [2023] 🐥🗣️ Open source contribution to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars). [tinydiarize](https://github.com/akashmjn/tinyDiarize) is a lightweight prototype extending OpenAI's Whisper model for speaker diarization, runnable on Macbooks/iPhones.
 - [2020] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/), a system for 24/7 monitoring of Southern Resident Killer Whales across many underwater hydrophones in the Pacific Northwest. It was awarded a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating live for >4 years - [listen here](http://orcahello.ai4orcas.net/Dashboard).
+</div>
+</details>
+
+
+<details>
+<summary>
+<h2>Even more misc</h2>
+</summary>
+
+<div markdown="1">
+- [2016/17] Wrote [case studies](/pdf/Spotify-MS&E270-Presentation.pdf) on the music streaming industry for Stanford MS&E Strategy courses.
+- [2014] Organized [Chennai's largest EDM gig](https://whatsthescene.com/2013/12/chennais-largest-edm-gig-at-iit-madras-saarang/), at the time - with 5k+ attendees, during my undergrad at IIT Madras.
+</div>
+</details>
+
+<!-- More items to add under Misc
+- stanford tts project
+- organized chennai's largest edm music feastival
+- past life on nicotine manufacturing, halliburton, control systems engineering
+-->
 
 <!-- Don't hesitate to reach out at [akashmjn.1] [at] [gmail] [dot] [--] with any thoughts, collaborations, or opportunites! -->
