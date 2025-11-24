@@ -28,8 +28,8 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 </summary>
 
 <div markdown="1">
-* 0→1: Built the core multimodal document understanding system (parsing, representation and ingestion) powering retrieval in the company's context platform for agents (i.e. RAG).
-* Applied research: Vision models, VLM workflow/agent framework, document representation for agentic retrieval (demo below).
+* 0→1: Built the core multimodal document understanding system (parsing, representation and ingestion) powering retrieval in the company's context platform for knowledge agents (i.e. RAG).
+* Applied research: Vision models, VLM workflow/agent framework, document representation for retrieval (demo below).
 * Tech Lead / Manager: Mentored, managed, interviewed candidates, DRI with forward-deployed eng, marketing, PM.
 * Links:
     * [Introducing the Document Parser for RAG](https://contextual.ai/blog/document-parser-for-rag/)
@@ -64,20 +64,20 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 </summary>
 
 <div markdown="1">
-- [2023] 🐥🗣️ Open source contribution to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars). [tinydiarize](https://github.com/akashmjn/tinyDiarize) is a lightweight prototype extending OpenAI's Whisper model for speaker diarization, runnable on Macbooks/iPhones.
-- [2020] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/), a system for 24/7 monitoring of Southern Resident Killer Whales across many underwater hydrophones in the Pacific Northwest. It was awarded a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating live for >4 years - [listen here](http://orcahello.ai4orcas.net/Dashboard).
+- [2023] 🐥🗣️ Contributed to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars). [tinydiarize](https://github.com/akashmjn/tinyDiarize) is a lightweight prototype extending OpenAI's Whisper model for speaker diarization, runnable on Macbooks/iPhones.
+- [2020] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/), a system for 24/7 monitoring of Southern Resident Killer Whales across many underwater "hydrophones" in the Pacific Northwest. It was awarded a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating in the wild for >4 years. Listen here [live](https://live.orcasound.net/) or to [past detections](http://orcahello.ai4orcas.net/Dashboard).
 </div>
 </details>
 
 
 <details>
 <summary>
-<h2>Even more misc</h2>
+<h2>Other</h2>
 </summary>
 
 <div markdown="1">
-- [2016/17] Wrote [case studies](/pdf/Spotify-MS&E270-Presentation.pdf) on the music streaming industry for Stanford MS&E Strategy courses.
-- [2014] Organized [Chennai's largest EDM gig](https://whatsthescene.com/2013/12/chennais-largest-edm-gig-at-iit-madras-saarang/), at the time - with 5k+ attendees, during my undergrad at IIT Madras.
+- [2016/17] Wrote [case studies](/pdf/Spotify-MS&E270-Presentation.pdf) on the music streaming industry while studying business/tech strategy at Stanford [MS&E](https://poetsandquants.com/2025/07/28/the-secret-stanford-program-no-ones-heard-about/).
+- [2014] Organized (at the time) [Chennai's largest EDM gig](https://whatsthescene.com/2013/12/chennais-largest-edm-gig-at-iit-madras-saarang/) - with 5k+ attendees, during my undergrad at IIT Madras/Chennai.
 </div>
 </details>
 
