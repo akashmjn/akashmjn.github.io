@@ -66,6 +66,7 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 <div markdown="1">
 - [2023] 🐥🗣️ Contributed to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars). [tinydiarize](https://github.com/akashmjn/tinyDiarize) is a lightweight prototype extending OpenAI's Whisper model for speaker diarization, runnable on Macbooks/iPhones.
 - [2020] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/), a system for 24/7 monitoring of Southern Resident Killer Whales across many underwater "hydrophones" in the Pacific Northwest. It was awarded a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating in the wild for >4 years. Listen here [live](https://live.orcasound.net/) or to [past detections](http://orcahello.ai4orcas.net/Dashboard).
+- [2018] 🗣️ Built [Attention, I'm Trying to Speak](https://github.com/akashmjn/cs224n-gpu-that-talks): speech synthesis with just $75 of compute. Got to [fist-bump Richard Socher](https://x.com/RichardSocher/status/976638195528904704?s=20) for [Stanford CS224n project award](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports.html) :).
 </div>
 </details>
 
