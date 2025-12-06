@@ -7,8 +7,8 @@ hero:
 author_profile: true
 title: 
 redirect_from: /about/
-last_modified_at: "2025-11-22"
-date: "2025-11-22"
+last_modified_at: "2025-12-05"
+date: "2025-12-05"
 ---
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
@@ -28,9 +28,10 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 </summary>
 
 <div markdown="1">
-* 0→1: Built the core multimodal document understanding system (parsing, representation and ingestion) powering retrieval in the company's context platform for knowledge agents (i.e. RAG).
-* Applied research: Vision models, VLM workflow/agent framework, document representation for retrieval (demo below).
-* Tech Lead / Manager: Mentored, managed, interviewed candidates, DRI with forward-deployed eng, marketing, PM.
+The Context platform for knowledge agents (i.e. RAG). Joined pre-Series A and product launch.
+* Product Development (0→1): Built core multimodal document understanding (parsing/OCR, representation) powering document ingestion and retrieval.
+* Applied research: Vision models, VLM workflow/agent framework, eval/annotation process & tooling, document representation for agentic retrieval.
+* Tech Lead / Manager: Roadmap, Release planning, DRI with forward-deployed/eng/PM/marketing, Mentored, interviewed candidates.
 * Links:
     * [Introducing the Document Parser for RAG](https://contextual.ai/blog/document-parser-for-rag/)
     * [Demo: llms.txt for Documents - Beyond Retrieval to Agentic Navigation](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BDHx4XhiTTqa5vQToJtWF3w%3D%3D)
@@ -45,10 +46,10 @@ I’m currently on a brief sabbatical, exploring ideas & tinkering as I work out
 </summary>
 
 <div markdown="1">
-* Shipped and optimized state of art models transcribing millions of hours of monthly conversations on Azure and Microsoft Teams APIs.
-* Research engineering: data pipeline, distributed training framework, profiling, optimizing for inference in ONNX/C++
-* Applied research: Scalability focused architecture design, data & training recipes, error analysis, evaluation metrics
-* Was one of the few non-speech-PhD senior members on the team :)
+* Shipped state of art transcription models designed for scale on Azure and Microsoft Teams APIs [O(1e7) hrs/month].
+* Applied research: data & training recipes, evaluation metrics & error analysis, scalability focused architecture design.
+* Research engineering: data pipeline, distributed training framework, optimizing training & inference in ONNX/C++.
+* 'Graduated' as one of the few non-speech-PhD senior members on the team :)
 * Links:
     * [Batch transcription - Azure AI Speech service](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription)
     * [US Patent US11563784B2: Caption assisted calling to maintain connection in challenging network conditions](https://patents.google.com/patent/US11563784B2/en)
