@@ -17,7 +17,7 @@ date: "2025-12-05"
 
 👋 Hi, I’m Akash, an applied researcher/engineer with experience in speech, audio (at [Microsoft](https://www.microsoft.com/en-us/research/group/cognitive-services-research/speech/)), and most recently multi-modal document understanding and retrieval (at [Contextual AI](https://contextual.ai/)). Turns out this completes the trio of audio, vision & text AI multimodality. :)
 
-I’m currently on a sabbatical, learning, exploring ideas & tinkering as I work out what’s next. Currently (a) learning about diffusion and generative audio models (b) exploring real-time music synthesis and performance (c) revisiting voice AI, now that conversations with computers are getting real. I'm also working on my [US immigration petition](https://writing.nikunjk.com/p/permanent-residency) which IYKYK is a project of its own.
+I’m currently on a sabbatical, learning, exploring ideas & tinkering as I work out what’s next. Currently (a) learning about diffusion and generative audio models (b) exploring real-time music synthesis and performance (c) revisiting voice AI, now that conversations with computers are getting real. I'm also working on my US immigration petition which [IYKYK](https://writing.nikunjk.com/p/permanent-residency) is a project of its own.
 
 # Work 
 
