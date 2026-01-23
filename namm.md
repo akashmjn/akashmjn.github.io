@@ -12,7 +12,7 @@ date: "2026-01-21"
 
 Hi - if you’re reading this, nice to meet you (or hope to meet you) at NAMM and thanks for stopping by.
 
-My day job has been as an AI tech/product lead (e.g. prev building voice AI models at Microsoft). But I’m also a life-long [audiophile](#namm-bonus) which is what brings me to NAMM this year for the first time!
+My day job has been as an AI research/product lead (e.g. prev building voice AI models at Microsoft). But I’m also a life-long [audiophile](#namm-bonus) which is what brings me to NAMM this year for the first time!
 
 I’m here to learn about music tech, and whether/how AI is finding valuable use today. 
 
