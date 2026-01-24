@@ -37,7 +37,7 @@ p.s. Shoutout to my friend/instigator [Manaswi (at MIT Media Lab)](https://www.l
   
 ![this](/assets/images/audiophile.png)
 
-1. (left) In my college days, on a stage truss, in my exicitement after learning about line-arrays - after organizing a sold-out [EDM gig](https://whatsthescene.com/2013/12/chennais-largest-edm-gig-at-iit-madras-saarang/)
+1. (left) Elated (on a stage truss) when I first learnt about line arrays, after organizing a sold-out [EDM gig](https://whatsthescene.com/2013/12/chennais-largest-edm-gig-at-iit-madras-saarang/) in college
 2. (right) Wannabe John Mayer :)
 
 </div>
