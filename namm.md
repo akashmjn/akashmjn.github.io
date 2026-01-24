@@ -34,6 +34,7 @@ p.s. Shoutout to my friend/instigator [Manaswi (at MIT Media Lab)](https://www.l
 </summary>
 
 <div markdown="1">
+  
 ![this](/assets/images/audiophile.png)
 
 1. (left) In my college days, on a stage truss, in my exicitement after learning about line-arrays - after organizing a sold-out [EDM gig](https://whatsthescene.com/2013/12/chennais-largest-edm-gig-at-iit-madras-saarang/)
