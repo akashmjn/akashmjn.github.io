@@ -206,6 +206,7 @@
   button {
     position: relative;
     margin-bottom: 0;
+    font-size: $type-size-5;
 
     &:before {
       @supports (pointer-events: none) {
@@ -299,6 +300,8 @@
 
   li {
     white-space: nowrap;
+    font-size: $type-size-5; // override .sidebar li ($type-size-6)
+    line-height: 1.5;
   }
 
   a {
@@ -308,12 +311,18 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: inherit;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  i,
+  .svg-inline--fa {
+    font-size: 1em;
+    vertical-align: -0.125em;
   }
 }
 
