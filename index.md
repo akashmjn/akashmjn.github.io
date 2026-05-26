@@ -7,17 +7,24 @@ hero:
 author_profile: true
 title: 
 redirect_from: /about/
-last_modified_at: "2025-12-05"
-date: "2025-12-05"
+last_modified_at: "2026-05-25"
+date: "2026-05-25"
 ---
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
 
 # About
 
-👋 Hi, I’m Akash, an applied researcher/engineer with experience in speech, audio (at [Microsoft](https://www.microsoft.com/en-us/research/group/cognitive-services-research/speech/)), and most recently multi-modal document understanding and retrieval (at [Contextual AI](https://contextual.ai/)). Turns out this completes the trio of audio, vision & text AI multimodality. :)
+👋 Hi, I’m Akash, an applied researcher/engineer with experience in speech, audio (at [Microsoft](https://www.microsoft.com/en-us/research/group/cognitive-services-research/speech/)), and most recently multi-modal document understanding and retrieval (at [Contextual AI](https://contextual.ai/)). This incidentally completes the trio of audio, vision & text AI multimodality. :)
 
-I’m currently on a sabbatical, learning, exploring ideas & tinkering as I work out what’s next. Currently (a) [studying](https://x.com/sedielem/status/1990439735672569889?s=20) diffusion and generative audio models (b) exploring [real-time](https://magenta.withgoogle.com/pianogenie) music synthesis and performance (c) revisiting voice AI, now that conversations with computers are getting real. I'm also working on my US immigration petition which [IYKYK](https://writing.nikunjk.com/p/permanent-residency) is a project of its own.
+> I'm currently on a sabbatical. After moving to the USA for grad school ~10 years ago, I decided to take a break to reflect, recharge and tinker before setting sail again. More on this here shortly!
+
+<!-- A few things I've been upto:
+- My US immigration petition which [IYKYK](https://writing.nikunjk.com/p/permanent-residency) is a project of its own
+- Studying diffusion models, both continuous and discrete diffusion LMs
+- Studying AIxbio by designing proteins shaped like the letters PROTEINS
+- Attended [NAMM](https://www.namm.org/sites/default/files/2026-03/NAMM_2026-PostShowReport.pdf) (CES for Music Technology) in LA in Jan 2026, and deeply studied AIxmusic
+ -->
 
 # Work 
 
@@ -28,13 +35,15 @@ I’m currently on a sabbatical, learning, exploring ideas & tinkering as I work
 </summary>
 
 <div markdown="1">
-The Context platform for knowledge agents (i.e. RAG). Joined pre-Series A and product launch.
-* Product Development (0→1): Built core multimodal document understanding (parsing/OCR, representation) powering document ingestion and retrieval.
-* Applied research: Vision models, VLM workflow/agent framework, eval/annotation process & tooling, document representation for agentic retrieval.
-* Tech Lead / Manager: Roadmap, Release planning, DRI with forward-deployed/eng/PM/marketing, Mentored, interviewed candidates.
-* Links:
-    * [Introducing the Document Parser for RAG](https://contextual.ai/blog/document-parser-for-rag/)
-    * [Demo: llms.txt for Documents - Beyond Retrieval to Agentic Navigation](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BDHx4XhiTTqa5vQToJtWF3w%3D%3D)
+* Product development (0→1): RAG platform for knowledge agents
+    * Built core [multimodal document understanding system](https://contextual.ai/blog/document-parser-for-rag/) powering ingestion and retrieval
+    * Critical in landing company's first multi-million $ enterprise [contract with Qualcomm](https://contextual.ai/case-study/qualcomm)
+* Applied research: Synthesis of long complex documents, eval design
+    * Combining segmentation models, VLMs, and parsers for high-fidelity OCR with bbox provenance
+    * Token-efficient cross-referencing via ingest-time document enrichment (à la [llm-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f))
+    * [Demo: Chat with 250 page PDF in Cursor](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152) | [Blog: Agentic alternative to GraphRAG](https://contextual.ai/blog/an-agentic-alternative-to-graphrag)
+* SWE things: Workflow/agent framework architecture, testing, observability, and scalability
+* Tech Lead Manager: DRI cross-company; Mentored team of 3, interviewed candidates
 </div>
 </details>
 
@@ -46,13 +55,19 @@ The Context platform for knowledge agents (i.e. RAG). Joined pre-Series A and pr
 </summary>
 
 <div markdown="1">
-* Shipped state of art transcription models designed for scale on Azure and Microsoft Teams APIs [O(1e7) hrs/month].
-* Applied research: data & training recipes, evaluation metrics & error analysis, scalability focused architecture design.
-* Research engineering: data pipeline, distributed training framework, optimizing training & inference in ONNX/C++.
-* 'Graduated' as one of the few non-speech-PhD senior members on the team :)
-* Links:
-    * [Batch transcription - Azure AI Speech service](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription)
-    * [US Patent US11563784B2: Caption assisted calling to maintain connection in challenging network conditions](https://patents.google.com/patent/US11563784B2/en)
+* Model development: state-of-art transcription designed for scale [O(1e7) hrs/month]
+    * Shipped both batch and streaming models to [Azure Batch](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription), [Microsoft Word](https://www.pcmag.com/how-to/save-time-with-microsoft-words-built-in-transcription-feature), and [Microsoft Teams](https://thenextweb.com/news/microsoft-teams-live-meeting-transcription-ai-zoom-video-conferencing)
+    * Optimized Conformer batch model ([Whisper](https://github.com/openai/whisper)-comparable) at 50x realtime
+* Applied research: diarized multi-speaker multi-mic transcription
+    * Shipped diarized in-conference room transcription device covered by [The Verge](https://www.theverge.com/2021/3/2/22308962/microsoft-intelligent-speaker-teams-translation-transcription-features)
+    * Lead contributor: ASR training recipes, evaluation metrics, cross-system error analysis
+* Research engineering: data pipelines, optimizing distributed training and inference
+    * Speeding up O(1e20) FLOP training on low-cost V100 GPUs
+    * Leveraged NVIDIA/ONNX profiling tools to fix bottlenecks in inference throughput
+* Other Links:
+    * [US Patent US11044287B1: Network resilient real-time voice communication leveraging on-device speech models](https://patents.google.com/patent/US11044287B1/en)
+
+'Graduated' as one of the few non-speech-PhD senior members on the team :)
 </div>
 </details>
 
@@ -65,8 +80,8 @@ The Context platform for knowledge agents (i.e. RAG). Joined pre-Series A and pr
 </summary>
 
 <div markdown="1">
-- [2023] 🐥🗣️ Contributed to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k stars). [tinydiarize](https://github.com/akashmjn/tinyDiarize) is a lightweight prototype extending OpenAI's Whisper model for speaker diarization, runnable on Macbooks/iPhones.
-- [2020] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/), a system for 24/7 monitoring of Southern Resident Killer Whales across many underwater "hydrophones" in the Pacific Northwest. It was awarded a [$30,000 AI for Earth Innovation Grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended) in 2020 and has been operating in the wild for >4 years. Listen here [live](https://live.orcasound.net/) or to [past detections](http://orcahello.ai4orcas.net/Dashboard).
+- [2023] 🐥🗣️ Contributed to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (38k+ stars). [tinydiarize](https://github.com/akashmjn/tinydiarize) is a lightweight extension of OpenAI's Whisper model for speaker diarization, runnable on MacBooks/iPhones.
+- [2019-22] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/orcahello/), a real-time alert system listening for endangered orca calls 24/7 at underwater "hydrophones" in the Pacific Northwest. Awarded a [$30k AI for Earth grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended); [covered by Mongabay News](https://news.mongabay.com/2026/04/ai-tool-listens-for-endangered-orcas-in-real-time-to-reduce-human-disturbance/).
 - [2018] 🗣️ Built [Attention, I'm Trying to Speak](https://github.com/akashmjn/cs224n-gpu-that-talks): speech synthesis with just $75 of compute. Got to [fist-bump Richard Socher](https://x.com/RichardSocher/status/976638195528904704?s=20) for [Stanford CS224n project award](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports.html) :).
 </div>
 </details>
