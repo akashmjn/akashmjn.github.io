@@ -204,7 +204,7 @@ li ol {
 /* details and summary (collapsible sections) */
 
 details {
-  margin: 1.5em 0;
+  margin: 2em 0;
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
@@ -241,6 +241,11 @@ summary {
   h1, h2, h3, h4, h5, h6 {
     margin: 0 0.5em;
     display: inline;
+  }
+
+  /* Trailing paragraph margin escapes summary and pads out the details box */
+  p:last-child {
+    margin-bottom: 0;
   }
 
   &:hover {
