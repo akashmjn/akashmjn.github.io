@@ -5,6 +5,7 @@ layout: archive
 #   button_url: "#about"
 #   button_label: "About"
 author_profile: true
+masthead_nav: connect_card_dropdown
 title: 
 last_modified_at: "2026-01-21"
 date: "2026-01-21"
