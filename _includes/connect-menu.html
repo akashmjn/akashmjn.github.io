@@ -1,0 +1,36 @@
+{% assign author = site.author %}
+
+<div class="masthead__connect">
+  <button class="masthead__connect-button" type="button" aria-expanded="false">
+    {{ include.label | default: "Connect" }}
+  </button>
+  <ul class="masthead__connect-urls">
+    {% if include.source == "author" %}
+      {% if author.location %}
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i><span class="label" itemprop="name">{{ author.location }}</span>
+        </li>
+      {% endif %}
+
+      {% for link in author.links %}
+        {% if link.label and link.url %}
+          <li>
+            <a href="{{ link.url }}" rel="nofollow noopener noreferrer">
+              <i class="{{ link.icon | default: 'fas fa-fw fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% for child in include.children %}
+      {% if child.title and child.url %}
+        <li>
+          <a href="{{ child.url | relative_url }}"{% if child.description %} title="{{ child.description }}"{% endif %}>
+            <i class="{{ child.icon | default: 'fas fa-fw fa-link' }}" aria-hidden="true"></i><span class="label">{{ child.title }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

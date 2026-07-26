@@ -1,4 +1,6 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% assign nav_key = include.nav_key | default: "main_links" %}
+{% assign nav_items = site.data.navigation[nav_key] %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -12,12 +14,19 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-            </li>
+          {%- for link in nav_items -%}
+            {%- unless link.type == "dropdown" -%}
+              <li class="masthead__menu-item">
+                <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              </li>
+            {%- endunless -%}
           {%- endfor -%}
         </ul>
+        {%- for link in nav_items -%}
+          {%- if link.type == "dropdown" -%}
+            {% include connect-menu.html label=link.title source=link.source children=link.children %}
+          {%- endif -%}
+        {%- endfor -%}
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>

@@ -14,6 +14,7 @@ $(function() {
   var $logoImg = $('nav.greedy-nav .site-logo img');
   var $title = $("nav.greedy-nav .site-title");
   var $search = $('nav.greedy-nav button.search__toggle');
+  var $connect = $('nav.greedy-nav .masthead__connect');
 
   var numOfItems, totalSpace, closingTime, breakWidths;
 
@@ -70,6 +71,7 @@ $(function() {
     availableSpace = /* nav */ $nav.innerWidth()
                    - /* logo */ ($logo.length !== 0 ? $logo.outerWidth(true) : 0)
                    - /* title */ $title.outerWidth(true)
+                   - /* connect */ ($connect.length !== 0 ? $connect.outerWidth(true) : 0)
                    - /* search */ ($search.length !== 0 ? $search.outerWidth(true) : 0)
                    - /* toggle */ (numOfVisibleItems !== breakWidths.length ? $btn.outerWidth(true) : 0);
     requiredSpace = breakWidths[numOfVisibleItems - 1];

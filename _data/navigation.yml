@@ -1,10 +1,19 @@
-# main links
-main:
-  # - title: Thoughts
-  #   url: https://x.com/akashmjn/highlights
-  - title: Resume
-    url: /resume/05_2026.pdf
-# updated on namesake
+# Masthead menus — pick via page front matter:
+#   masthead_nav: main_links          # usual text links (default)
+#   masthead_nav: connect_card_dropdown   # Connect dropdown card
+
+main_links:
+  - title: Home
+    url: /
+
+connect_card_dropdown:
+  - title: Connect
+    type: dropdown
+    source: author          # pulls site.author.location + site.author.links
+    children:               # optional extra rows in the card
+      - title: Resume
+        url: /resume/05_2026.pdf
+        icon: fas fa-fw fa-file-pdf
 
 #     Removing these until I cleanup and update the blog section
 #  - title: Projects

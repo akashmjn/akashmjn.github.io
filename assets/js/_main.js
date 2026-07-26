@@ -27,15 +27,36 @@ $(document).ready(function() {
     stickySideBar();
   });
 
-  // Follow menu drop down
+  // Follow menu drop down (author sidebar)
   $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").toggleClass("is--visible");
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // Close search screen with Esc key
+  // Masthead Connect menu
+  var $connectToggle = $(".masthead__connect-button");
+  var $connectMenu = $(".masthead__connect-urls");
+
+  var setConnectMenu = function(open) {
+    $connectMenu.toggleClass("is--visible", open);
+    $connectToggle.attr("aria-expanded", open);
+  };
+
+  $connectToggle.on("click", function(e) {
+    e.stopPropagation();
+    setConnectMenu(!$connectMenu.hasClass("is--visible"));
+  });
+
+  $(document).on("click", function(e) {
+    if (!$(e.target).closest(".masthead__connect").length) {
+      setConnectMenu(false);
+    }
+  });
+
+  // Close search screen / Connect menu with Esc key
   $(document).keyup(function(e) {
     if (e.keyCode === 27) {
+      setConnectMenu(false);
       if ($(".initial-content").hasClass("is--hidden")) {
         $(".search-content").toggleClass("is--visible");
         $(".initial-content").toggleClass("is--hidden");

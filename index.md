@@ -5,6 +5,7 @@ hero:
   button_url: "#about"
   button_label: "About"
 author_profile: true
+masthead_nav: connect_card_dropdown
 title: 
 redirect_from: /about/
 last_modified_at: "2026-05-25"
