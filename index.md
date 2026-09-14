@@ -8,8 +8,8 @@ author_profile: true
 masthead_nav: connect_card_dropdown
 title: 
 redirect_from: /about/
-last_modified_at: "2026-09-13"
-date: "2026-09-13"
+last_modified_at: "2026-09-14"
+date: "2026-09-14"
 ---
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
@@ -37,15 +37,15 @@ date: "2026-09-13"
 
 <div markdown="1">
 * System development (0→1)
-    * Designed core [multimodal document understanding](https://contextual.ai/blog/document-parser-for-rag/) (parsing + ETL index) used by retrieval agents
+    * Designed core [multimodal document understanding](https://contextual.ai/blog/document-parser-for-rag/) (parsing + ETL index) used by retrieval agents for all customers in production
     * Ingesting O(billion) tokens of multimodal documents with complex layouts, tables, graphics, metadata
-    * Owned system quality. Co-led with platform lead: architected modules to fit multi-stage async distributed pipeline spanning CPU, GPU, and VLM API stages
+    * Shipped as a distributed async service with multiple stages (CPU, GPU and VLM API). I owned system quality and core modules, and co-led architecture with a platform lead
 * Applied research: harness and eval design, token-efficient retrieval
-    * Combining parsing tools, custom segmentation models and VLMs for auditable OCR with bbox provenance and minimal hallucination
-    * Token-efficient synthesis beyond point queries via ingest-time ETL (à la [llm-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f))
-    * [Blog: Agentic alternative to GraphRAG](https://contextual.ai/blog/an-agentic-alternative-to-graphrag) | [Demo: Chat with 250 page PDF in Cursor](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152)
+    * Built core harness combining parsing tools, custom segmentation models and VLM/LLM modules for auditable OCR with bbox provenance and minimal hallucination
+    * Developed composable ingest-time ETL workflows enabling efficient retrieval beyond point queries (à la [llm-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f))
+    * [Blog: Token-efficient GraphRAG](https://contextual.ai/blog/an-agentic-alternative-to-graphrag) | [Demo: 250 page PDF chat in Cursor](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152)
 * Tech Lead Manager
-    * DRI cross-company; Interviewed candidates, Mentored team of 3
+    * PoC with Product/GTM/Marketing across company; Interviewed candidates, led team of 3
     * Critical in landing company's first multi-million $ enterprise [contract with Qualcomm](https://contextual.ai/case-study/qualcomm)
 </div>
 </details>
@@ -60,13 +60,13 @@ date: "2026-09-13"
 <div markdown="1">
 * Model development: state-of-art transcription designed for scale [O(10 million) hrs/mo]
     * Shipped both batch and streaming models to [Azure Batch](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription), [Microsoft Word](https://www.pcmag.com/how-to/save-time-with-microsoft-words-built-in-transcription-feature), and [Microsoft Teams](https://thenextweb.com/news/microsoft-teams-live-meeting-transcription-ai-zoom-video-conferencing)
-    * Optimized Conformer batch model ([Whisper](https://github.com/openai/whisper)-comparable) at 50x realtime
+    * Conformer batch model ([Whisper](https://github.com/openai/whisper)-comparable) optimized to run at 50x realtime
 * Applied research: diarized multi-speaker multi-mic transcription
     * Shipped diarized in-conference room transcription device covered by [The Verge](https://www.theverge.com/2021/3/2/22308962/microsoft-intelligent-speaker-teams-translation-transcription-features)
     * Lead contributor: ASR training recipes, evaluation metrics, cross-system error analysis
-* Research engineering: data pipelines, optimizing distributed training and inference
-    * Speeding up O(1e20) FLOP training on low-cost V100 GPUs
-    * Leveraged NVIDIA/ONNX profiling tools to fix bottlenecks in inference throughput
+* Research engineering: data pipelines, distributed training, inference
+    * Sped up O(1e20) FLOP training on low-cost V100 GPUs to run in <1 week
+    * Fixed inference bottlenecks leveraging NVIDIA/ONNX profiling tools, saving $ millions
 * Other Links:
     * [US Patent US11044287B1: Network resilient real-time voice communication leveraging on-device speech models](https://patents.google.com/patent/US11044287B1/en)
 
@@ -84,7 +84,7 @@ For more details, see my [resume](/resume/09_2026.pdf).
 </summary>
 
 <div markdown="1">
-- [2026] 🎙️ Self-study: efficient audio generation  ([github](https://github.com/akashmjn/dflash-voice), ongoing). Speculative decoding with relaxed acceptance on single-codebook TTS (Chatterbox-TTS); Meanflow distillation for single-step FSQ token flow decoder (Voxtral-TTS).
+- [2026] 🎙️ Self-study: efficient audio generation ([github](https://github.com/akashmjn/dflash-voice), ongoing). Speculative decoding with relaxed acceptance on single-codebook TTS (Chatterbox-TTS); Meanflow distillation of FSQ token flow decoder for 2x faster local inference (Voxtral-TTS).
 - [2023] 🐥🗣️ Contributed to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (50k+ stars). [tinydiarize](https://github.com/akashmjn/tinydiarize) is a lightweight extension of OpenAI's Whisper model for speaker diarization, runnable on MacBooks/iPhones.
 - [2020/26] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/orcahello/), a real-time alert system listening for endangered orca calls 24/7 at underwater "hydrophones" in the Pacific Northwest. Awarded a [$30k AI for Earth grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended); [interviewed in Mongabay News](https://news.mongabay.com/2026/04/ai-tool-listens-for-endangered-orcas-in-real-time-to-reduce-human-disturbance/).
 - [2018] 🗣️ Built [Attention, I'm Trying to Speak](https://github.com/akashmjn/cs224n-gpu-that-talks): speech synthesis with just $75 of compute. Got to [fist-bump Richard Socher](https://x.com/RichardSocher/status/976638195528904704?s=20) for [Stanford CS224n project award](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports.html) :).
