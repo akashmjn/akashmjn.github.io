@@ -8,8 +8,8 @@ author_profile: true
 masthead_nav: connect_card_dropdown
 title: 
 redirect_from: /about/
-last_modified_at: "2026-05-25"
-date: "2026-05-25"
+last_modified_at: "2026-09-13"
+date: "2026-09-13"
 ---
 
 <!-- name pronounciation example? [▶️](https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg) -->
@@ -36,15 +36,17 @@ date: "2026-05-25"
 </summary>
 
 <div markdown="1">
-* Product development (0→1): RAG platform for knowledge agents
-    * Built core [multimodal document understanding](https://contextual.ai/blog/document-parser-for-rag/) powering context ingestion for retrieval
+* System development (0→1)
+    * Designed core [multimodal document understanding](https://contextual.ai/blog/document-parser-for-rag/) (parsing + ETL index) used by retrieval agents
+    * Ingesting O(billion) tokens of multimodal documents with complex layouts, tables, graphics, metadata
+    * Owned system quality. Co-led with platform lead: architected modules to fit multi-stage async distributed pipeline spanning CPU, GPU, and VLM API stages
+* Applied research: harness and eval design, token-efficient retrieval
+    * Combining parsing tools, custom segmentation models and VLMs for auditable OCR with bbox provenance and minimal hallucination
+    * Token-efficient synthesis beyond point queries via ingest-time ETL (à la [llm-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f))
+    * [Blog: Agentic alternative to GraphRAG](https://contextual.ai/blog/an-agentic-alternative-to-graphrag) | [Demo: Chat with 250 page PDF in Cursor](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152)
+* Tech Lead Manager
+    * DRI cross-company; Interviewed candidates, Mentored team of 3
     * Critical in landing company's first multi-million $ enterprise [contract with Qualcomm](https://contextual.ai/case-study/qualcomm)
-* Applied research: Synthesis of long complex documents, eval design
-    * Combining segmentation models, VLMs, and parsers for high-fidelity OCR with bbox provenance
-    * Token-efficient synthesis of million+ token context via ingest-time compute (à la [llm-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f))
-    * [Demo: Chat with 250 page PDF in Cursor](https://www.linkedin.com/feed/update/urn:li:activity:7346595035770929152) | [Blog: Agentic alternative to GraphRAG](https://contextual.ai/blog/an-agentic-alternative-to-graphrag)
-* SWE things: Workflow/agent framework architecture, testing, observability, and scalability
-* Tech Lead Manager: DRI cross-company; Mentored team of 3, interviewed candidates
 </div>
 </details>
 
@@ -56,7 +58,7 @@ date: "2026-05-25"
 </summary>
 
 <div markdown="1">
-* Model development: state-of-art transcription designed for scale [X * 1e7 hrs/month]
+* Model development: state-of-art transcription designed for scale [O(10 million) hrs/mo]
     * Shipped both batch and streaming models to [Azure Batch](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription), [Microsoft Word](https://www.pcmag.com/how-to/save-time-with-microsoft-words-built-in-transcription-feature), and [Microsoft Teams](https://thenextweb.com/news/microsoft-teams-live-meeting-transcription-ai-zoom-video-conferencing)
     * Optimized Conformer batch model ([Whisper](https://github.com/openai/whisper)-comparable) at 50x realtime
 * Applied research: diarized multi-speaker multi-mic transcription
@@ -82,8 +84,9 @@ For more details, see my [resume](/resume/09_2026.pdf).
 </summary>
 
 <div markdown="1">
+- [2026] 🎙️ Self-study: efficient audio generation, multi-stream dialog models ([github](https://github.com/akashmjn/dflash-voice), ongoing). Speculative decoding with relaxed acceptance on single-codebook TTS (Chatterbox-TTS); Meanflow distillation for single-step FSQ token flow decoder (Voxtral-TTS); hybrid cascaded/duplex voice agent architectures (e.g. MoshiRAG).
 - [2023] 🐥🗣️ Contributed to [whisper.cpp](https://twitter.com/ggerganov/status/1676271637572853771) (50k+ stars). [tinydiarize](https://github.com/akashmjn/tinydiarize) is a lightweight extension of OpenAI's Whisper model for speaker diarization, runnable on MacBooks/iPhones.
-- [2019-22] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/orcahello/), a real-time alert system listening for endangered orca calls 24/7 at underwater "hydrophones" in the Pacific Northwest. Awarded a [$30k AI for Earth grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended); [covered by Mongabay News](https://news.mongabay.com/2026/04/ai-tool-listens-for-endangered-orcas-in-real-time-to-reduce-human-disturbance/).
+- [2020/26] 🐋 Co-founded [OrcaHello](https://ai4orcas.net/orcahello/), a real-time alert system listening for endangered orca calls 24/7 at underwater "hydrophones" in the Pacific Northwest. Awarded a [$30k AI for Earth grant](https://wildlabs.net/funding-opportunity/ai-earth-innovation-grant-extended); [interviewed in Mongabay News](https://news.mongabay.com/2026/04/ai-tool-listens-for-endangered-orcas-in-real-time-to-reduce-human-disturbance/).
 - [2018] 🗣️ Built [Attention, I'm Trying to Speak](https://github.com/akashmjn/cs224n-gpu-that-talks): speech synthesis with just $75 of compute. Got to [fist-bump Richard Socher](https://x.com/RichardSocher/status/976638195528904704?s=20) for [Stanford CS224n project award](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports.html) :).
 </div>
 </details>
@@ -95,7 +98,7 @@ For more details, see my [resume](/resume/09_2026.pdf).
 </summary>
 
 <div markdown="1">
-- [2025/26] Peer reviewer for ICASSP, TMLR, and NeurIPS, CVPR workshops.
+- [2025/26] Peer reviewer for ICASSP conference, TMLR journal, and NeurIPS, CVPR workshops.
 - [2016/17] Wrote [case studies](/pdf/Spotify-MS&E270-Presentation.pdf) on the music streaming industry while studying business/tech strategy at Stanford [MS&E](https://poetsandquants.com/2025/07/28/the-secret-stanford-program-no-ones-heard-about/).
 - [2014] Organized (at the time) [Chennai's largest EDM gig](https://whatsthescene.com/2013/12/chennais-largest-edm-gig-at-iit-madras-saarang/) - with 5k+ attendees, during my undergrad at IIT Madras/Chennai.
 </div>
