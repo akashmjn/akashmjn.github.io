@@ -72,7 +72,7 @@ date: "2026-05-25"
 </div>
 </details>
 
-For more details, see my [resume](/resume/05_2026.pdf).
+For more details, see my [resume](/resume/09_2026.pdf).
 
 # Misc 
 

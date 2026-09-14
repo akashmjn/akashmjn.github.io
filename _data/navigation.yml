@@ -12,7 +12,7 @@ connect_card_dropdown:
     source: author          # pulls site.author.location + site.author.links
     children:               # optional extra rows in the card
       - title: Resume
-        url: /resume/05_2026.pdf
+        url: /resume/09_2026.pdf
         icon: fas fa-fw fa-file-pdf
 
 #     Removing these until I cleanup and update the blog section
